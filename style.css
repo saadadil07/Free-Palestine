@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#buttons{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+button{
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    font-weight: 900;
+    border-radius: 1rem;
+    &:hover{
+        scale: 1.2;
+        cursor: pointer;
+    }
+}
+
+#ignore{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#yes{
+    background-color: green;
+}
+
+#no{
+    background-color: red;
+}
+
+#ok{
+    margin-top: 100px;
+}
+
+h2{
+    font-size: 2.5vw;
+}
+
+h2::selection{
+    background-color: red;
+    color: black;
+}
+
+.alive{
+    animation: alive 3s ease-in;
+}
+@keyframes alive{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#bycott{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#bycott img{
+    filter: brightness(0.8) contrast(1.2);
+}
+
+#child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#child img{
+    width: 50vw;
+    height: 85vh;
+    border-radius: 1rem;
+    object-fit: cover;
+    /* display: none; */
+}
+
+#mama{
+    font-size: 4vw;
+    left: -20vw;
+    top: 15vw;
+    /* display: none; */
+    position: absolute;
+}
+
+#papa{
+    font-size: 4vw;
+    right: -15vw;
+    bottom: 15vw;
+    /* display: none; */
+    position: absolute;
+}
